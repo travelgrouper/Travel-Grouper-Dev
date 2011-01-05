@@ -8,7 +8,7 @@ class User < ActiveRecord::Base
       user.email = auth["user_info"]["email"]
       user.location = auth["user_info"]["location"]
       user.image = auth["user_info"]["image"]
-      user.facebook_hash = auth["extra"]["user_hash"].inspect
+      user.facebook_hash = auth["extra"]["user_hash"].to_s
     end
   end
 end
