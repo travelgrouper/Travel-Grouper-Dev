@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
       user.provider = auth["provider"]
       user.uid = auth["uid"]
       user.name = auth["user_info"]["name"]
-      user.email = auth["user_info"]["email"]
+      user.email = auth["extra"]["user_hash"]
       user.location = auth["user_info"]["location"]
       user.image = auth["user_info"]["image"]
       #user.facebook_hash = auth["extra"]["user_hash"].to_s
