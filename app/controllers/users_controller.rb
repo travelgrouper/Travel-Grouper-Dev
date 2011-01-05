@@ -74,11 +74,9 @@ class UsersController < ApplicationController
   def destroy
     @user = User.find(params[:id])
     @user.destroy
-    route_to signout_path
-  end
 
     respond_to do |format|
-      format.html { redirect_to(users_url) }
+      format.html { redirect_to(signout_path) }
       format.xml  { head :ok }
     end
   end
