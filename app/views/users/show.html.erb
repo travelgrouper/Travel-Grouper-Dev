@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<p><%= puts current_user %></p>
+<p><%= puts current_user.to_s %></p>
 
 <%= link_to 'Destroy', @user, :confirm => 'Are you sure?', :method => :delete %>
 <%= link_to 'Edit', edit_user_path(@user) %> |
