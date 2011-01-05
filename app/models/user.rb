@@ -9,9 +9,4 @@ class User < ActiveRecord::Base
       user.image = auth["user_info"]["image"]
     end
   end
-  def self.check_for_updates(auth)
-    if user.email !== auth["user_info"]["email"]
-      user.email = auth["user_info"]["email"]
-    end
-  end
 end
