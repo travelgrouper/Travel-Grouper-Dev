@@ -7,10 +7,10 @@
   <%= csrf_meta_tag %>
 <% if current_user %>
   Welcome <%= link_to "#{current_user.name}", "/users/#{current_user.id}" %>!
-  Info <%= request.env["omniauth.auth"].to_s %>
+  <%= image_tag "http://graph.facebook.com/#{current_user.uid}/picture" %>
   <%= link_to "Sign Out", signout_path %>
 <% else %>
-  <%= link_to "Sign in with Facebook", "/auth/facebook" %>
+  <%= link_to image_tag "http://developers.facebook.com/images/devsite/login-button.png", "/auth/facebook" %>
 <% end %>
 </head>
 <body>
