@@ -10,7 +10,7 @@
   <%= image_tag "http://graph.facebook.com/#{current_user.uid}/picture" %>
   <%= link_to "Sign Out", signout_path %>
 <% else %>
-  <%= link_to image_tag "http://developers.facebook.com/images/devsite/login-button.png", "/auth/facebook" %>
+  <%= link_to image_tag("login-button.png"), "/auth/facebook" %>
 <% end %>
 </head>
 <body>
