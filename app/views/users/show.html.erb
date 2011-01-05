@@ -1,7 +1,6 @@
 <p id="notice"><%= notice %></p>
 
 <p><%= current_user.inspect %></p>
-<p><%= current_user.facebookauthdata.inspect %></p>
 
 <%= link_to 'Destroy', @user, :confirm => 'Are you sure?', :method => :delete %>
 <%= link_to 'Edit', edit_user_path(@user) %> |

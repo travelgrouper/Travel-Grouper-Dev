@@ -1,5 +1,4 @@
 class User < ActiveRecord::Base
-  attr_accessor :facebookauthdata
 
   def self.create_with_omniauth(auth)
     create! do |user|
