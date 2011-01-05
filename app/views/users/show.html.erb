@@ -1,6 +1,10 @@
 <p id="notice"><%= notice %></p>
 
 <p><%= current_user.inspect %></p>
+<p><%= current_user.name %></p>
+<p><%= current_user.email %></p>
+<p><%= current_user.location %></p>
+<p><%= image_tag "http://graph.facebook.com/#{current_user.uid}/picture" %></p>
 
 <%= link_to 'Destroy', @user, :confirm => 'Are you sure?', :method => :delete %>
 <%= link_to 'Edit', edit_user_path(@user) %> |
