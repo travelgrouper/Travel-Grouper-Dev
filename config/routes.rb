@@ -9,7 +9,6 @@ TravelGrouperDev::Application.routes.draw do
 
   match "/auth/facebook/callback" => "sessions#create"
   match "/signout" => "sessions#destroy", :as => :signout
-  match "/users" => "users#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
