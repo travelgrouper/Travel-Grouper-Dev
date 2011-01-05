@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<p><%= inspect(current_user) %></p>
+<p><%= current_user.inspect %></p>
 
 <%= link_to 'Destroy', @user, :confirm => 'Are you sure?', :method => :delete %>
 <%= link_to 'Edit', edit_user_path(@user) %> |
