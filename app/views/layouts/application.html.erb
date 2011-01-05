@@ -6,7 +6,7 @@
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
   <% if current_user %>
-  Welcome <%= link_to "#{current_user.name}", "/users/show/#{current_user.id}" %>!
+  Welcome <%= link_to "#{current_user.name}", "/users/#{current_user.id}" %>!
   Info <%= request.env["omniauth.auth"].to_s %>
   <%= link_to "Sign Out", signout_path %>
 <% else %>
